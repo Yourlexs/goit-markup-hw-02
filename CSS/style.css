@@ -26,6 +26,7 @@ ul{
 }
 
 /* Logo */
+
 .logo{
     color: var(--title-text-color);
     font-family: Raleway, sans-serif;
@@ -63,6 +64,7 @@ ul{
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
+
 .address-list a:hover,
 .address-list a:focus{
     color: var(--accent-color);
@@ -71,6 +73,7 @@ ul{
 /* Главная страница */
 
 /* Hero */
+
 .hero{
     background-color: #2F303A;;
 }
@@ -107,7 +110,9 @@ ul{
     font-size: 14px;
     line-height: 1.7;
 }
+
 /* Чем мы занимаемся и о команде */
+
 .about-us-title{
     color: var(--title-text-color);
     font-weight: 700;
@@ -115,19 +120,27 @@ ul{
     line-height: 1.16;
     text-align: center;
 }
+
+/* Имена сотрудников */
+
 .name{
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.9;
+    text-align: center;
 }
+/* Должности сотрудников */
+
 .position{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.9;
+    text-align: center;
 }
 
 /* Футер */
+
 footer{
     background-color: #2F303A;;
 }
@@ -157,13 +170,12 @@ footer a{
     line-height: 1.6;
     letter-spacing: 0.03em;
 }
+
 button:hover,
 button:focus{
     color: var(--primary-white-color);
     background-color: var(--accent-color);
 }
-
-
 
 .portfolio-list h2{
     color: var(--title-text-color);
