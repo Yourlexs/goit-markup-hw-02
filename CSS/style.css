@@ -3,12 +3,15 @@
 /* цвет фона белый #FFFFFF; */
 /* вторичный цвет фона #F5F4FA; */
 /* акцент #2196F3; */
+/* герой и футер фон #2F303A; */
 
 :root{
     --primary-text-color: #757575;
     --title-text-color: #212121;
     --accent-color: #2196F3;
     --primary-white-color: #FFFFFF;
+    --secondary-background-color: #F5F4FA;
+    --hero-bgr-color: #2F303A;
 }
 
 body{
@@ -44,18 +47,24 @@ ul{
     color: var(--title-text-color);
     }
 
+.site-nav{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}      
+
 .site-nav a:hover,
-.site-nav a:focus{
+.site-nav a:focus,
+.site-nav .link.current,
+.address-list a:hover,
+.address-list a:focus{
     color: var(--accent-color);
     }
 
 .link:visited{
     color: var(--title-text-color);
 }
-
-.site-nav .link.current{
-    color: var(--accent-color);
-}   
 
 .address-list a{
     color: var(--primary-text-color);
@@ -65,17 +74,12 @@ ul{
     letter-spacing: 0.02em;
 }
 
-.address-list a:hover,
-.address-list a:focus{
-    color: var(--accent-color);
-}
-
 /* Главная страница */
 
 /* Hero */
 
 .hero{
-    background-color: #2F303A;;
+    background-color: var(--hero-bgr-color);
 }
 
 .hero-title{
@@ -106,7 +110,7 @@ ul{
 }
 
 .features p{
-    font-weight: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
 }
@@ -121,6 +125,9 @@ ul{
     text-align: center;
 }
 
+.about-team{
+    background-color: var(--secondary-background-color);
+}
 /* Имена сотрудников */
 
 .name{
@@ -142,7 +149,7 @@ ul{
 /* Футер */
 
 footer{
-    background-color: #2F303A;;
+    background-color:var(--hero-bgr-color);
 }
 footer .logo {
     color: var(--primary-white-color);
@@ -164,7 +171,7 @@ footer a{
 
 .button-list button{
     color: var(--title-text-color);
-    background-color: #F5F4FA;
+    background-color: var(--secondary-background-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
